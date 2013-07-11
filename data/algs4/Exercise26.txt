@@ -1,0 +1,13 @@
+if (a > b) { t = a; a = b; b = t; }
+
+After executing the above, b > a.
+
+if (a > c) { t = a; a = c; c = t; }
+
+After executing the above, c > a.
+
+if (b > c) { t = b; b = c; c = t; }
+
+After executing the above, c > b.
+
+Given all of the above, c > b > a.
