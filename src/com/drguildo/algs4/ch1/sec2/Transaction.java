@@ -12,7 +12,10 @@ public class Transaction implements Comparable<Transaction> {
   }
 
   public Transaction(String transaction) {
-    // lolnope
+    String[] fields = transaction.split(" +");
+    this.who = fields[0];
+    this.date = new SmartDate(fields[1]);
+    this.amount = Double.parseDouble(fields[2]);
   }
 
   public String who() {
@@ -29,7 +32,7 @@ public class Transaction implements Comparable<Transaction> {
 
   @Override
   public String toString() {
-    return null;
+    return who + ", " + date + ", " + amount;
   }
 
   @Override
@@ -63,5 +66,7 @@ public class Transaction implements Comparable<Transaction> {
   }
 
   public static void main(String[] args) {
+    Transaction t = new Transaction("Turing 5/22/1939 11.99");
+    System.out.println(t);
   }
 }
