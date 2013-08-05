@@ -31,6 +31,18 @@ public class SmartDate {
       throw new IllegalArgumentException("illegal year");
   }
 
+  public SmartDate(String date) {
+    String[] fields = date.split("/");
+
+    if (fields.length < 3)
+      throw new IllegalArgumentException(
+          "dates must be of the format mm/dd/yyyy");
+
+    month = Integer.parseInt(fields[0]);
+    day = Integer.parseInt(fields[1]);
+    year = Integer.parseInt(fields[2]);
+  }
+
   public boolean isLeapYear() {
     if (year % 400 == 0)
       return true;
