@@ -4,13 +4,13 @@ package edu.princeton.cs.algs4;
  *  Compilation:  javac BinarySearchST.java
  *  Execution:    java BinarySearchST
  *  Dependencies: StdIn.java StdOut.java
- *  Data files:   http://algs4.cs.princeton.edu/31elementary/tinyST.txt  
- *  
+ *  Data files:   http://algs4.cs.princeton.edu/31elementary/tinyST.txt
+ *
  *  Symbol table implementation with binary search in an ordered array.
  *
  *  % more tinyST.txt
  *  S E A R C H E X A M P L E
- *  
+ *
  *  % java BinarySearchST < tinyST.txt
  *  A 8
  *  C 4
@@ -39,12 +39,14 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
   }
 
   // create an empty symbol table with given initial capacity
+  @SuppressWarnings("unchecked")
   public BinarySearchST(int capacity) {
     keys = (Key[]) new Comparable[capacity];
     vals = (Value[]) new Object[capacity];
   }
 
   // resize the underlying arrays
+  @SuppressWarnings("unchecked")
   private void resize(int capacity) {
     assert capacity >= N;
     Key[] tempk = (Key[]) new Comparable[capacity];
@@ -98,7 +100,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
     return lo;
   }
 
-  // Search for key. Update value if found; grow table if new. 
+  // Search for key. Update value if found; grow table if new.
   public void put(Key key, Value val) {
     if (val == null) {
       delete(key);

@@ -4,10 +4,10 @@ package edu.princeton.cs.algs4;
  *  Compilation:  javac ResizingArrayStack.java
  *  Execution:    java ResizingArrayStack < input.txt
  *  Data files:   http://algs4.cs.princeton.edu/13stacks/tobe.txt
- *  
+ *
  *  Stack implementation with a resizing array.
  *
- *  % more tobe.txt 
+ *  % more tobe.txt
  *  to be or not to - be - - that - - - is
  *
  *  % java ResizingArrayStack < tobe.txt
@@ -23,6 +23,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
   private int N; // number of elements on stack
 
   // create an empty stack
+  @SuppressWarnings("unchecked")
   public ResizingArrayStack() {
     a = (Item[]) new Object[2];
   }
@@ -36,6 +37,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
   }
 
   // resize the underlying array holding the elements
+  @SuppressWarnings("unchecked")
   private void resize(int capacity) {
     assert capacity >= N;
     Item[] temp = (Item[]) new Object[capacity];

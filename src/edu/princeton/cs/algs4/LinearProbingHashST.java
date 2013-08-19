@@ -3,7 +3,7 @@ package edu.princeton.cs.algs4;
 /*************************************************************************
  *  Compilation:  javac LinearProbingHashST.java
  *  Execution:    java LinearProbingHashST
- *  
+ *
  *  Symbol table implementation with linear probing hash table.
  *
  *  % java LinearProbingHashST
@@ -28,6 +28,7 @@ public class LinearProbingHashST<Key, Value> {
   }
 
   // create linear proving hash table of given capacity
+  @SuppressWarnings("unchecked")
   public LinearProbingHashST(int capacity) {
     M = capacity;
     keys = (Key[]) new Object[M];

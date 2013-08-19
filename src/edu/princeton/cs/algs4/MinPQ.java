@@ -3,7 +3,7 @@ package edu.princeton.cs.algs4;
 /*************************************************************************
  *  Compilation:  javac MinPQ.java
  *  Execution:    java MinPQ < input.txt
- *  
+ *
  *  Generic min priority queue implementation with a binary heap.
  *  Can be used with a comparator instead of the natural order.
  *
@@ -44,6 +44,7 @@ public class MinPQ<Key> implements Iterable<Key> {
   /**
     * Create an empty priority queue with the given initial capacity.
     */
+  @SuppressWarnings("unchecked")
   public MinPQ(int initCapacity) {
     pq = (Key[]) new Object[initCapacity + 1];
     N = 0;
@@ -60,6 +61,7 @@ public class MinPQ<Key> implements Iterable<Key> {
     * Create an empty priority queue with the given initial capacity,
     * using the given comparator.
     */
+  @SuppressWarnings("unchecked")
   public MinPQ(int initCapacity, Comparator<Key> comparator) {
     this.comparator = comparator;
     pq = (Key[]) new Object[initCapacity + 1];
@@ -77,6 +79,7 @@ public class MinPQ<Key> implements Iterable<Key> {
     * Create a priority queue with the given items.
     * Takes time proportional to the number of items using sink-based heap construction.
     */
+  @SuppressWarnings("unchecked")
   public MinPQ(Key[] keys) {
     N = keys.length;
     pq = (Key[]) new Object[keys.length + 1];
@@ -112,6 +115,7 @@ public class MinPQ<Key> implements Iterable<Key> {
   }
 
   // helper function to double the size of the heap array
+  @SuppressWarnings("unchecked")
   private void resize(int capacity) {
     assert capacity > N;
     Key[] temp = (Key[]) new Object[capacity];

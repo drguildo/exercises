@@ -3,12 +3,12 @@ package edu.princeton.cs.algs4;
 /*************************************************************************
  *  Compilation:  javac MaxPQ.java
  *  Execution:    java MaxPQ < input.txt
- *  
+ *
  *  Generic max priority queue implementation with a binary heap.
  *  Can be used with a comparator instead of the natural order,
  *  but the generic Key type must still be Comparable.
  *
- *  % java MaxPQ < tinyPQ.txt 
+ *  % java MaxPQ < tinyPQ.txt
  *  Q X P (6 left on pq)
  *
  *  We use a one-based array to simplify parent and child calculations.
@@ -46,6 +46,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
   /**
     * Create an empty priority queue with the given initial capacity.
     */
+  @SuppressWarnings("unchecked")
   public MaxPQ(int capacity) {
     pq = (Key[]) new Object[capacity + 1];
     N = 0;
@@ -62,6 +63,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
     * Create an empty priority queue with the given initial capacity,
     * using the given comparator.
     */
+  @SuppressWarnings("unchecked")
   public MaxPQ(int initCapacity, Comparator<Key> comparator) {
     this.comparator = comparator;
     pq = (Key[]) new Object[initCapacity + 1];
@@ -79,6 +81,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
     * Create a priority queue with the given items.
     * Takes time proportional to the number of items using sink-based heap construction.
     */
+  @SuppressWarnings("unchecked")
   public MaxPQ(Key[] keys) {
     N = keys.length;
     pq = (Key[]) new Object[keys.length + 1];
@@ -114,6 +117,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
   }
 
   // helper function to double the size of the heap array
+  @SuppressWarnings("unchecked")
   private void resize(int capacity) {
     assert capacity > N;
     Key[] temp = (Key[]) new Object[capacity];

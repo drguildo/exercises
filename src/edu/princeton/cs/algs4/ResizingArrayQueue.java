@@ -3,11 +3,11 @@ package edu.princeton.cs.algs4;
 /*************************************************************************
  *  Compilation:  javac ResizingArrayQueue.java
  *  Execution:    java ResizingArrayQueue < input.txt
- *  Data files:   http://algs4.cs.princeton.edu/13stacks/tobe.txt  
- *  
+ *  Data files:   http://algs4.cs.princeton.edu/13stacks/tobe.txt
+ *
  *  Queue implementation with a resizing array.
  *
- *  % java ResizingArrayQueue < tobe.txt 
+ *  % java ResizingArrayQueue < tobe.txt
  *  to be or not to be (2 left on queue)
  *
  *************************************************************************/
@@ -22,6 +22,7 @@ public class ResizingArrayQueue<Item> implements Iterable<Item> {
   private int last = 0; // index of next available slot
 
   // cast needed since no generic array creation in Java
+  @SuppressWarnings("unchecked")
   public ResizingArrayQueue() {
     q = (Item[]) new Object[2];
   }
@@ -35,6 +36,7 @@ public class ResizingArrayQueue<Item> implements Iterable<Item> {
   }
 
   // resize the underlying array
+  @SuppressWarnings("unchecked")
   private void resize(int max) {
     assert max >= N;
     Item[] temp = (Item[]) new Object[max];
@@ -56,7 +58,7 @@ public class ResizingArrayQueue<Item> implements Iterable<Item> {
     N++;
   }
 
-  // remove the least recently added item 
+  // remove the least recently added item
   public Item dequeue() {
     if (isEmpty())
       throw new NoSuchElementException("Queue underflow");
