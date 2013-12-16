@@ -2,15 +2,11 @@ package com.drguildo.dailyprogrammer;
 
 /**
  * Welcome to cipher day!
- * <p/>
+ * 
  * Write a program that can encrypt texts with an alphabetical caesar cipher.
  * This cipher can ignore numbers, symbols, and whitespace.
- * <p/>
+ * 
  * For extra credit, add a "decrypt" function to your program!
- *
- * @author Simon Morgan <sjm@eml.cc>
- * @see <a href="http://goo.gl/lzG6b">Reddit</a>
- * @see <a href="http://en.wikipedia.org/wiki/Caesar_cipher">Wikipedia</a>
  */
 public class Challenge2Easy {
   private static final String ALPHABET = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";

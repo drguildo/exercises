@@ -15,10 +15,6 @@ import java.io.FileNotFoundException;
  * .... . .-.. .-.. --- / -.. .- .. .-.. -.-- / .--. .-. --- --. .-. .- -- -- .
  * .-. / --. --- --- -.. / .-.. ..- -.-. -.- / --- -. / - .... . / -.-. .... .-
  * .-.. .-.. . -. --. . ... / - --- -.. .- -.--
- * 
- * @author Simon Morgan <sjm@eml.cc>
- * @see <a href="http://goo.gl/UpJpz">Reddit</a>
- * 
  */
 public class Challenge7Easy {
   public static void main(String[] args) {

@@ -4,10 +4,6 @@ package com.drguildo.dailyprogrammer;
  * write a program that will print the song "99 bottles of beer on the wall".
  * 
  * for extra credit, do not allow the program to print each loop on a new line.
- * 
- * @author Simon Morgan <sjm@eml.cc>
- * @see <a href="http://goo.gl/K4oyS">Reddit</a>
- * 
  */
 public class NinetyNineBottles {
   public static void main(String[] args) {

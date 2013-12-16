@@ -3,6 +3,17 @@ package com.drguildo.dailyprogrammer;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * You have just been hired at a local home improvement store to help compute
+ * the proper costs of inventory. The current prices are out of date and wrong;
+ * you have to figure out which items need to be re-labelled with the correct
+ * price.
+ * 
+ * You will be first given a list of item-names and their current price. You
+ * will then be given another list of the same item-names but with the correct
+ * price. You must then print a list of items that have changed, and by how
+ * much.
+ */
 public class Challenge144Easy {
   public static void main(String[] args) {
     final HashMap<String, Integer> oldPrices = new HashMap<>();

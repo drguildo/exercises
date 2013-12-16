@@ -8,14 +8,10 @@ import java.util.Scanner;
 /**
  * Your challenge for today is to create a program which is password protected,
  * and wont open unless the correct user and password is given.
- *
+ * 
  * For extra credit, have the user and password in a separate .txt file.
- *
+ * 
  * For even more extra credit, break into your own program :)
- *
- * @author Simon Morgan <sjm@eml.cc>
- * @see <a href="http://goo.gl/O2WSR">Reddit</a>
- *
  */
 public class Challenge5Easy {
   private static final String credentialsPath = "data/dailyprogrammer/Challenge5Easy.txt";
