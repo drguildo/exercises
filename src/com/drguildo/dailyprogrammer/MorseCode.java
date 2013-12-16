@@ -19,10 +19,6 @@ import java.util.Scanner;
  * .... . .-.. .-.. --- / -.. .- .. .-.. -.-- / .--. .-. --- --. .-. .- -- -- .
  * .-. / --. --- --- -.. / .-.. ..- -.-. -.- / --- -. / - .... . / -.-. .... .-
  * .-.. .-.. . -. --. . ... / - --- -.. .- -.--
- * 
- * @author Simon Morgan <sjm@eml.cc>
- * @see <a href="http://goo.gl/UpJpz">Reddit</a>
- * 
  */
 public class MorseCode {
   private ArrayList<String[]> mapping;
