@@ -8,7 +8,7 @@ package com.drguildo.dailyprogrammer;
  * 
  * For extra credit, add a "decrypt" function to your program!
  */
-public class Challenge2Easy {
+public class Challenge3Easy {
   private static final String ALPHABET = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
   private static String encrypt(final String s, final int shiftLen) {
