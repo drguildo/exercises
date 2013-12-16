@@ -12,6 +12,8 @@ import java.util.Scanner;
  * For extra credit, have the user and password in a separate .txt file.
  * 
  * For even more extra credit, break into your own program :)
+ * 
+ * URL: http://www.reddit.com/r/dailyprogrammer/comments/pnhyn/2122012_challenge_5_easy/
  */
 public class Challenge5Easy {
   private static final String credentialsPath = "data/dailyprogrammer/Challenge5Easy.txt";

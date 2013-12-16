@@ -7,6 +7,8 @@ package com.drguildo.dailyprogrammer;
  * This cipher can ignore numbers, symbols, and whitespace.
  * 
  * For extra credit, add a "decrypt" function to your program!
+ * 
+ * URL: http://www.reddit.com/r/dailyprogrammer/comments/pkw2m/2112012_challenge_3_easy/
  */
 public class Challenge3Easy {
   private static final String ALPHABET = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";

@@ -13,6 +13,8 @@ import java.util.Scanner;
  * will then be given another list of the same item-names but with the correct
  * price. You must then print a list of items that have changed, and by how
  * much.
+ * 
+ * URL: http://www.reddit.com/r/dailyprogrammer/comments/1sob1e/121113_challenge_144_easy_nuts_bolts/
  */
 public class Challenge144Easy {
   public static void main(String[] args) {

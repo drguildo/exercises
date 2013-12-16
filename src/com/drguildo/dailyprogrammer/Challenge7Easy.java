@@ -26,13 +26,17 @@ public class Challenge7Easy {
   private static final ArrayList<String[]> mapping = new ArrayList<>();
   private static final String mappingsPath = "data/dailyprogrammer/MorseCode.txt";
 
-  public static void main(String[] args) throws FileNotFoundException {
+  public static void main(String[] args) {
     String morse = ".... . .-.. .-.. --- / -.. .- .. .-.. -.-- / "
         + ".--. .-. --- --. .-. .- -- -- . .-. / --. --- --- -.. / "
         + ".-.. ..- -.-. -.- / --- -. / - .... . / "
         + "-.-. .... .- .-.. .-.. . -. --. . ... / - --- -.. .- -.--";
 
-    System.out.println(fromMorse(morse));
+    try {
+      System.out.println(fromMorse(morse));
+    } catch (FileNotFoundException e) {
+      e.printStackTrace();
+    }
   }
 
   // Converts a morse code string to plain text.
@@ -67,7 +71,7 @@ public class Challenge7Easy {
   }
 
   // Converts a plain text string to morse code.
-  public String toMorse(String text) {
+  public static String toMorse(String text) {
     String morse = "";
 
     String[] words = text.split(" ");
