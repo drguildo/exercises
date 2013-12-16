@@ -5,15 +5,14 @@ import java.util.Random;
 
 /**
  * Your challenge for today is to create a random password generator!
- * <p>
+ * 
  * For extra credit, allow the user to specify the amount of passwords to
  * generate.
- * <p>
+ * 
  * For even more extra credit, allow the user to specify the length of the
  * strings he wants to generate!
  * 
- * @author Simon Morgan <sjm@eml.cc>
- * @see <a href="http://goo.gl/j6YYO">Reddit</a>
+ * URL: http://www.reddit.com/r/dailyprogrammer/comments/pm6oj/2122012_challenge_4_easy/
  */
 public class Challenge4Easy {
   private static final String ALPHABET = "0123456789abcdefghijklmnopqrstuvwxyz"
