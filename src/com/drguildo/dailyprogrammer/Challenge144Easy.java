@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Challenge144Easy {
   public static void main(String[] args) {
-    final HashMap<String, Integer> prices = new HashMap<>();
+    final HashMap<String, Integer> oldPrices = new HashMap<>();
     final Scanner scanner = new Scanner(System.in);
 
     int numRows = Integer.parseInt(scanner.nextLine());
@@ -15,9 +15,9 @@ public class Challenge144Easy {
       String[] split = line.split("\\s");
 
       String name = split[0];
-      int origPrice = Integer.parseInt(split[1]);
+      int oldPrice = Integer.parseInt(split[1]);
 
-      prices.put(name, origPrice);
+      oldPrices.put(name, oldPrice);
     }
 
     for (int i = 0; i < numRows; i++) {
@@ -27,14 +27,11 @@ public class Challenge144Easy {
       String name = split[0];
       int newPrice = Integer.parseInt(split[1]);
 
-      if (prices.containsKey(name) && (newPrice != prices.get(name))) {
-        int origPrice = prices.get(name);
+      if (oldPrices.containsKey(name) && (newPrice != oldPrices.get(name))) {
+        int oldPrice = oldPrices.get(name);
 
-        System.out.print(name);
-        System.out.print(" ");
-        if (newPrice > origPrice)
-          System.out.print("+");
-        System.out.println(newPrice - origPrice);
+        System.out.println(String.format("%s %s%d", name,
+            (newPrice > oldPrice) ? "+" : "", newPrice - oldPrice));
       }
     }
 
