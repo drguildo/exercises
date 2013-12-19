@@ -1,4 +1,4 @@
-package com.drguildo.dailyprogrammer;
+package com.drguildo.dailyprogrammer.intermediate;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -16,7 +16,7 @@ import java.util.Scanner;
  * words that fits the starting pattern. You will be given the number of
  * button-presses and digit, narrowing down the search-space.
  */
-public class Challenge139Intermediate {
+public class Challenge139 {
   private static final HashMap<Integer, String> map = new HashMap<>();
 
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.drguildo.dailyprogrammer;
+package com.drguildo.dailyprogrammer.easy;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -15,7 +15,7 @@ import java.util.Scanner;
  * 
  * URL: http://www.reddit.com/r/dailyprogrammer/comments/pnhyn/2122012_challenge_5_easy/
  */
-public class Challenge5Easy {
+public class Challenge5 {
   private static final String credentialsPath = "data/dailyprogrammer/Challenge5Easy.txt";
 
   public static void main(final String[] args) {

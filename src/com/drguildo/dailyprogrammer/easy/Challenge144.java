@@ -1,4 +1,4 @@
-package com.drguildo.dailyprogrammer;
+package com.drguildo.dailyprogrammer.easy;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -16,7 +16,7 @@ import java.util.Scanner;
  * 
  * URL: http://www.reddit.com/r/dailyprogrammer/comments/1sob1e/121113_challenge_144_easy_nuts_bolts/
  */
-public class Challenge144Easy {
+public class Challenge144 {
   public static void main(String[] args) {
     final HashMap<String, Integer> oldPrices = new HashMap<>();
     final Scanner scanner = new Scanner(System.in);

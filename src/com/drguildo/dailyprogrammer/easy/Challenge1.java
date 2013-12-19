@@ -1,4 +1,4 @@
-package com.drguildo.dailyprogrammer;
+package com.drguildo.dailyprogrammer.easy;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -16,7 +16,7 @@ import java.util.Scanner;
  * 
  * URL: http://www.reddit.com/r/dailyprogrammer/comments/pih8x/easy_challenge_1/
  */
-public class Challenge1Easy {
+public class Challenge1 {
   public static void main(final String[] args) {
     final Scanner scanner = new Scanner(System.in);
 

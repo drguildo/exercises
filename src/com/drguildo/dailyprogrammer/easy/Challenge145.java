@@ -1,4 +1,4 @@
-package com.drguildo.dailyprogrammer;
+package com.drguildo.dailyprogrammer.easy;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ import java.util.Scanner;
  * URL: http://www.reddit.com/r/dailyprogrammer/comments/1t0r09/
  * 121613_challenge_145_easy_tree_generation/
  */
-public class Challenge145Easy {
+public class Challenge145 {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 

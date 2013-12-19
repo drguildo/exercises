@@ -1,4 +1,4 @@
-package com.drguildo.dailyprogrammer;
+package com.drguildo.dailyprogrammer.easy;
 
 /**
  * Welcome to cipher day!
@@ -10,7 +10,7 @@ package com.drguildo.dailyprogrammer;
  * 
  * URL: http://www.reddit.com/r/dailyprogrammer/comments/pkw2m/2112012_challenge_3_easy/
  */
-public class Challenge3Easy {
+public class Challenge3 {
   private static final String ALPHABET = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
   private static String encrypt(final String s, final int shiftLen) {

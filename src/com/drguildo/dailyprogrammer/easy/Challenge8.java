@@ -1,4 +1,4 @@
-package com.drguildo.dailyprogrammer;
+package com.drguildo.dailyprogrammer.easy;
 
 /**
  * write a program that will print the song "99 bottles of beer on the wall".
@@ -7,7 +7,7 @@ package com.drguildo.dailyprogrammer;
  * 
  * URL: http://www.reddit.com/r/dailyprogrammer/comments/pserp/2162012_challenge_8_easy/
  */
-public class Challenge8Easy {
+public class Challenge8 {
   public static void main(String[] args) {
     for (int bottles = 99; bottles > 1; bottles--) {
       System.out.print(bottles + " bottles of beer on the wall, ");

@@ -1,4 +1,4 @@
-package com.drguildo.dailyprogrammer;
+package com.drguildo.dailyprogrammer.easy;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -22,7 +22,7 @@ import java.util.Scanner;
  * URL: http://www.reddit.com/r/dailyprogrammer/comments/pr2xr/
  * 2152012_challenge_7_easy/
  */
-public class Challenge7Easy {
+public class Challenge7 {
   private static final ArrayList<String[]> mapping = new ArrayList<>();
   private static final String mappingsPath = "data/dailyprogrammer/MorseCode.txt";
 

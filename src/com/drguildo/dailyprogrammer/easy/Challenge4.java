@@ -1,4 +1,4 @@
-package com.drguildo.dailyprogrammer;
+package com.drguildo.dailyprogrammer.easy;
 
 import java.security.InvalidParameterException;
 import java.util.Random;
@@ -14,7 +14,7 @@ import java.util.Random;
  * 
  * URL: http://www.reddit.com/r/dailyprogrammer/comments/pm6oj/2122012_challenge_4_easy/
  */
-public class Challenge4Easy {
+public class Challenge4 {
   private static final String ALPHABET = "0123456789abcdefghijklmnopqrstuvwxyz"
       + "ABCDEFGHIJKLMNOPQRSTUVWXYZ~@#%^&*()-_=+[]{}|;:,.<>?";
 
