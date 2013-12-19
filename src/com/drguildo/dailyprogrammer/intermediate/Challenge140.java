@@ -2,18 +2,22 @@ package com.drguildo.dailyprogrammer.intermediate;
 
 import java.util.Scanner;
 
-// In graph theory , an adjacency matrix is a data structure that can represent
-// the edges between nodes for a graph in an N x N matrix. The basic idea is
-// that an edge exists between the elements of a row and column if the entry at
-// that point is set to a valid value. This data structure can also represent
-// either a directed graph or an undirected graph , since you can read the rows
-// as being "source" nodes, and columns as being the "destination" (or
-// vice-versa).
-//
-// Your goal is to write a program that takes in a list of edge-node
-// relationships, and print a directed adjacency matrix for it. Our convention
-// will follow that rows point to columns. Follow the examples for clarification
-// of this convention.
+/*
+ * In graph theory , an adjacency matrix is a data structure that can represent
+ * the edges between nodes for a graph in an N x N matrix. The basic idea is
+ * that an edge exists between the elements of a row and column if the entry at
+ * that point is set to a valid value. This data structure can also represent
+ * either a directed graph or an undirected graph , since you can read the rows
+ * as being "source" nodes, and columns as being the "destination" (or
+ * vice-versa).
+ * 
+ * Your goal is to write a program that takes in a list of edge-node
+ * relationships, and print a directed adjacency matrix for it. Our convention
+ * will follow that rows point to columns. Follow the examples for clarification
+ * of this convention.
+ * 
+ * URL: http://www.reddit.com/r/dailyprogrammer/comments/1t6dlf/121813_challenge_140_intermediate_adjacency_matrix/
+ */
 public class Challenge140 {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
