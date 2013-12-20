@@ -3,11 +3,11 @@ package com.drguildo.dailyprogrammer.intermediate;
 import java.util.Scanner;
 
 /*
- * In graph theory , an adjacency matrix is a data structure that can represent
+ * In graph theory, an adjacency matrix is a data structure that can represent
  * the edges between nodes for a graph in an N x N matrix. The basic idea is
  * that an edge exists between the elements of a row and column if the entry at
  * that point is set to a valid value. This data structure can also represent
- * either a directed graph or an undirected graph , since you can read the rows
+ * either a directed graph or an undirected graph, since you can read the rows
  * as being "source" nodes, and columns as being the "destination" (or
  * vice-versa).
  * 
