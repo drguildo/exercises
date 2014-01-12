@@ -19,8 +19,7 @@ import java.util.Scanner;
  * .-. / --. --- --- -.. / .-.. ..- -.-. -.- / --- -. / - .... . / -.-. .... .-
  * .-.. .-.. . -. --. . ... / - --- -.. .- -.--
  * 
- * URL: http://www.reddit.com/r/dailyprogrammer/comments/pr2xr/
- * 2152012_challenge_7_easy/
+ * URL: http://www.reddit.com/r/dailyprogrammer/comments/pr2xr/2152012_challenge_7_easy/
  */
 public class Challenge7 {
   private static final ArrayList<String[]> mapping = new ArrayList<>();
