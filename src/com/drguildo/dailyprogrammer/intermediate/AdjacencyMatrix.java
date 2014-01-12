@@ -18,7 +18,7 @@ import java.util.Scanner;
  * 
  * URL: http://www.reddit.com/r/dailyprogrammer/comments/1t6dlf/121813_challenge_140_intermediate_adjacency_matrix/
  */
-public class Challenge140 {
+public class AdjacencyMatrix {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 

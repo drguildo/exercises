@@ -16,7 +16,7 @@ import java.util.Scanner;
  * words that fits the starting pattern. You will be given the number of
  * button-presses and digit, narrowing down the search-space.
  */
-public class Challenge139 {
+public class TelephoneKeypads {
   private static final HashMap<Integer, String> map = new HashMap<>();
 
   public static void main(String[] args) {

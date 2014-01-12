@@ -12,10 +12,9 @@ import java.util.Scanner;
  * character, so the bottom might be 7, while shrinks to 5, 3, and 1 on top
  * layers.
  * 
- * URL: http://www.reddit.com/r/dailyprogrammer/comments/1t0r09/
- * 121613_challenge_145_easy_tree_generation/
+ * URL: http://www.reddit.com/r/dailyprogrammer/comments/1t0r09/121613_challenge_145_easy_tree_generation/
  */
-public class Challenge145 {
+public class TreeGeneration {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 

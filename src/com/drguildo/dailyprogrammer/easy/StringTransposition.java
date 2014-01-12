@@ -12,7 +12,7 @@ import java.util.Scanner;
  * 
  * URL: http://www.reddit.com/r/dailyprogrammer/comments/1m1jam/081313_challenge_137_easy_string_transposition/
  */
-public class Challenge137 {
+public class StringTransposition {
   public static void main(String[] args) {
     Scanner scanner = new Scanner("5\n" + "Kernel\n" + "Microcontroller\n"
         + "Register\n" + "Memory\n" + "Operator");

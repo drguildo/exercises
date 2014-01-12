@@ -25,7 +25,7 @@ import java.util.Scanner;
  * 
  * URL: http://www.reddit.com/r/dailyprogrammer/comments/1qdw40/111113_challenge_141_easy_monty_hall_simulation/
  */
-public class Challenge141 {
+public class MontyHallSimulation {
   private static Random rand = new Random();
 
   public static void main(String[] args) {
