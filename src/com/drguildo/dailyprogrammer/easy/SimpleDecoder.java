@@ -1,5 +1,12 @@
 package com.drguildo.dailyprogrammer.easy;
 
+/**
+ * I have encoded a message by adding a "4" to each character's ASCII value. It
+ * will be your job to decode this message by reversing the process and making a
+ * decoder.
+ * 
+ * URL: http://www.reddit.com/r/dailyprogrammer/comments/21w3lb/412014_challenge_156_easy_simple_decoder/
+ */
 public class SimpleDecoder {
   public static void main(String[] args) {
     String s = "Etvmp$Jsspw%%%%[e}$xs$ks%$]sy$lezi$wspzih$xli$lmhhir$qiwweki2$Rs{$mx$mw$}syv$xyvr$xs$nsmr\n"
