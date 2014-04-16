@@ -34,11 +34,14 @@ public class GorellianAlphabetSort {
     private String alphabet;
 
     public GorellianComparator(String letters) {
-      alphabet = letters;
+      alphabet = letters.toLowerCase();
     }
 
     @Override
     public int compare(String a, String b) {
+      a = a.toLowerCase();
+      b = b.toLowerCase();
+
       int i = 0;
       while (i < a.length() && i < b.length()) {
         if (a.charAt(i) == b.charAt(i)) {
@@ -66,7 +69,8 @@ public class GorellianAlphabetSort {
   }
 
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner("5 ZYXWVuTSRQpONMLkJIHGFEDCBa\n" + "go\n"
+        + "aLL\n" + "ACM\n" + "teamS\n" + "Go");
 
     int n = scanner.nextInt();
     String alphabet = scanner.nextLine();
