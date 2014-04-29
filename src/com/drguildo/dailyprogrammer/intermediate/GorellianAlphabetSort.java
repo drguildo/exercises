@@ -1,6 +1,7 @@
 package com.drguildo.dailyprogrammer.intermediate;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
@@ -74,7 +75,7 @@ public class GorellianAlphabetSort {
 
     int n = scanner.nextInt();
     String alphabet = scanner.nextLine();
-    ArrayList<String> wordList = new ArrayList<String>();
+    ArrayList<String> wordList = new ArrayList<>();
 
     while (scanner.hasNextLine() && n > 0) {
       wordList.add(scanner.nextLine());
@@ -83,7 +84,7 @@ public class GorellianAlphabetSort {
 
     scanner.close();
 
-    wordList.sort(new GorellianComparator(alphabet));
+    Collections.sort(wordList, new GorellianComparator(alphabet));
 
     for (String word : wordList)
       System.out.println(word);
