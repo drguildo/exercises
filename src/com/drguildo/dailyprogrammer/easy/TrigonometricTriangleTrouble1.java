@@ -91,7 +91,6 @@ public class TrigonometricTriangleTrouble1 {
     } else if (defined(c)) {
       a = Math.sin(A) * (1 / c);
       b = Math.sin(B) * (1 / c);
-      ;
     }
 
     System.out.println("a=" + a);
