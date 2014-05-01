@@ -23,7 +23,7 @@ public class TrigonometricTriangleTrouble1 {
   private static final double RIGHT_ANGLE = 1.57079633; // 90 degrees in radians
 
   public static void main(String[] args) {
-    Scanner scanner = new Scanner("3\n" + "a=3\n" + "A=20\n" + "C=90");
+    Scanner scanner = new Scanner(System.in);
 
     int n = scanner.nextInt();
     scanner.nextLine();
