@@ -1,5 +1,7 @@
 package com.drguildo.algs4.ch1.sec1;
 
+import io.sjm.stdlib.Rand;
+
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Point;
@@ -10,8 +12,6 @@ import java.util.ArrayList;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
-import com.drguildo.stdlib.Random;
 
 public class Exercise31 extends JPanel {
   @Override
@@ -135,7 +135,7 @@ public class Exercise31 extends JPanel {
   private static ArrayList<Line2D.Double> generateLines(ArrayList<Point> ps,
       double p) {
     ArrayList<Line2D.Double> lines = new ArrayList<>();
-    Random r = new Random();
+    Rand r = new Rand();
 
     for (int i = 0; i < ps.size(); i++)
       for (int j = i + 1; j < ps.size(); j++) {

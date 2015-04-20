@@ -1,14 +1,14 @@
 package com.drguildo.algs4.ch1.sec1;
 
-import java.util.Arrays;
+import io.sjm.stdlib.Rand;
 
-import com.drguildo.stdlib.Random;
+import java.util.Arrays;
 
 public class Exercise15 {
   public static void main(String[] args) {
-    Random rand = new Random();
+    Rand rand = new Rand();
     int[] a = rand.randArrayInt(100, 100);
-    
+
     System.out.println(Arrays.toString(histogram(a, 100)));
   }
 

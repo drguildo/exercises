@@ -1,8 +1,8 @@
 package com.drguildo.algs4.ch1.sec1;
 
-import java.util.Scanner;
+import io.sjm.stdlib.Arrays;
 
-import com.drguildo.stdlib.Arrays;
+import java.util.Scanner;
 
 import edu.princeton.cs.algs4.StdDraw;
 

@@ -1,6 +1,6 @@
 package com.drguildo.algs4.ch1.sec1;
 
-import com.drguildo.stdlib.Arrays;
+import io.sjm.stdlib.Arrays;
 
 public class Matrix {
   // vector dot product

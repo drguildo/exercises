@@ -1,7 +1,5 @@
 package com.drguildo.algs4.ch1.sec1;
 
-import java.util.Arrays;
-
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
 
@@ -26,8 +24,8 @@ public class Exercise28 {
   public static void main(String[] args) {
     int[] whitelist = new In(args[0]).readAllInts();
 
-    Arrays.sort(whitelist);
-    whitelist = com.drguildo.stdlib.Arrays.unique(whitelist);
+    java.util.Arrays.sort(whitelist);
+    whitelist = io.sjm.stdlib.Arrays.unique(whitelist);
 
     // read key; print if not in whitelist
     In keyFile = new In(args[1]);
