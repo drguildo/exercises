@@ -31,7 +31,7 @@ public class Exercise39 {
         nums1 = genArray((int) Math.pow(10, i));
         nums2 = genArray((int) Math.pow(10, i));
         for (int n : nums1)
-          if (BinarySearch.rank(n, nums2) != -1)
+          if (BinarySearch.indexOf(nums2, n) != -1)
             same++;
         results[i - 3] += same;
       }
