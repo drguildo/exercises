@@ -1,7 +1,7 @@
 package com.drguildo.algs4.ch1.sec1;
 
-import io.sjm.stdlib.Arrays;
-import io.sjm.stdlib.Maths;
+import io.sjm.sjmlib.Arrays;
+import io.sjm.sjmlib.Maths;
 
 public class Exercise30 {
   public static boolean[][] relativelyPrimeArray(int x, int y) {

@@ -25,7 +25,7 @@ public class Exercise28 {
     int[] whitelist = new In(args[0]).readAllInts();
 
     java.util.Arrays.sort(whitelist);
-    whitelist = io.sjm.stdlib.Arrays.unique(whitelist);
+    whitelist = io.sjm.sjmlib.Arrays.unique(whitelist);
 
     // read key; print if not in whitelist
     In keyFile = new In(args[1]);

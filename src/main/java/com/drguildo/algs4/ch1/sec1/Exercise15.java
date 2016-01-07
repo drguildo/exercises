@@ -1,6 +1,6 @@
 package com.drguildo.algs4.ch1.sec1;
 
-import io.sjm.stdlib.Rand;
+import io.sjm.sjmlib.Rand;
 
 import java.util.Arrays;
 
