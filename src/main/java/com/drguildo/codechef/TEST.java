@@ -13,7 +13,7 @@ import java.io.Reader;
  * numbers from input to output. Stop processing input after reading in the
  * number 42. All numbers at input are integers of one or two digits.
  *
- * @author Simon Morgan <sjm@eml.cc>
+ * @author Simon Morgan <sjm@sjm.io>
  *
  */
 public class TEST {

@@ -3,7 +3,7 @@ package com.drguildo.algorithms;
 /**
  * An implementation of insertion sort that operates on an array of integers.
  * 
- * @author Simon Morgan <sjm@eml.cc>
+ * @author Simon Morgan <sjm@sjm.io>
  * 
  */
 public class InsertionSort {

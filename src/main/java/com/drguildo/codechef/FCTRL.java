@@ -15,7 +15,7 @@ import java.util.Scanner;
  * For every number N, output a single line containing the single non-negative
  * integer Z(N).
  *
- * @author Simon Morgan <sjm@eml.cc>
+ * @author Simon Morgan <sjm@sjm.io>
  *
  */
 public class FCTRL {

@@ -1,7 +1,7 @@
 package com.drguildo.algorithms;
 
 /**
- * @author Simon Morgan <sjm@eml.cc>
+ * @author Simon Morgan <sjm@sjm.io>
  * 
  */
 public class LinearSearch {

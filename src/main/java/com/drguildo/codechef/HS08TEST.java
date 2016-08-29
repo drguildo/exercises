@@ -14,7 +14,7 @@ import java.util.Scanner;
  *
  * Calculate Pooja's account balance after an attempted transaction.
  *
- * @author Simon Morgan <sjm@eml.cc>
+ * @author Simon Morgan <sjm@sjm.io>
  *
  */
 public class HS08TEST {

@@ -17,7 +17,7 @@ import java.util.ArrayList;
  * square root. Each square root should be printed in a separate line with at
  * least four digits after decimal point.
  *
- * @author Simon Morgan <sjm@eml.cc>
+ * @author Simon Morgan <sjm@sjm.io>
  *
  */
 public class Problem1001 {
