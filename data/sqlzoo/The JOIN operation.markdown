@@ -111,26 +111,41 @@ GROUP BY game.stadium
 11
 --
 
+SQLZOO has `ONLY_FULL_GROUP_BY` enabled and so we need to specify all
+non-agregate columns in the `GROUP BY`.
+
 ```sql
-SELECT game.id, game.mdate, COUNT( goal.matchid )
-FROM game
+SELECT
+	game.id,
+	game.mdate,
+	COUNT( goal.matchid )
+FROM
+	game
 JOIN goal ON
-game.id = goal.matchid
-WHERE game.team1 = 'POL'
-OR game.team2 = 'POL'
-GROUP BY game.id
+	game.id = goal.matchid
+WHERE
+	game.team1 = 'POL'
+	OR game.team2 = 'POL'
+GROUP BY
+	game.id, game.mdate
 ```
 
 12
 --
 
 ```sql
-SELECT game.id, game.mdate, COUNT( goal.teamid )
-FROM game
+SELECT
+	game.id,
+	game.mdate,
+	COUNT( goal.teamid )
+FROM
+	game
 JOIN goal ON
-game.id = goal.matchid
-WHERE goal.teamid = 'GER'
-GROUP BY game.id
+	game.id = goal.matchid
+WHERE
+	goal.teamid = 'GER'
+GROUP BY
+	game.id, game.mdate
 ```
 
 13
@@ -145,7 +160,10 @@ SELECT
 	SUM( CASE WHEN goal.teamid = game.team2 THEN 1 ELSE 0 END ) AS score2
 FROM
 	game
-JOIN goal ON
+LEFT JOIN goal ON
 	game.id = goal.matchid
-GROUP BY game.mdate
+GROUP BY
+	game.mdate,
+	game.team2,
+	game.team1
 ```
