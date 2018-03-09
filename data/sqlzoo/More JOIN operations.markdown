@@ -5,12 +5,12 @@
 
 ```sql
 SELECT
-	id,
-	title
+  id,
+  title
 FROM
-	movie
+  movie
 WHERE
-	yr = 1962
+  yr = 1962
 ```
 
 When was Citizen Kane released?
