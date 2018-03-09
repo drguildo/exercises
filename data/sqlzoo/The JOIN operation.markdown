@@ -116,18 +116,19 @@ non-agregate columns in the `GROUP BY`.
 
 ```sql
 SELECT
-	game.id,
-	game.mdate,
-	COUNT( goal.matchid )
+  game.id,
+  game.mdate,
+  COUNT( goal.matchid )
 FROM
-	game
+  game
 JOIN goal ON
-	game.id = goal.matchid
+  game.id = goal.matchid
 WHERE
-	game.team1 = 'POL'
-	OR game.team2 = 'POL'
+  game.team1 = 'POL'
+  OR game.team2 = 'POL'
 GROUP BY
-	game.id, game.mdate
+  game.id,
+  game.mdate
 ```
 
 12
@@ -135,17 +136,18 @@ GROUP BY
 
 ```sql
 SELECT
-	game.id,
-	game.mdate,
-	COUNT( goal.teamid )
+  game.id,
+  game.mdate,
+  COUNT( goal.teamid )
 FROM
-	game
+  game
 JOIN goal ON
-	game.id = goal.matchid
+  game.id = goal.matchid
 WHERE
-	goal.teamid = 'GER'
+  goal.teamid = 'GER'
 GROUP BY
-	game.id, game.mdate
+  game.id,
+  game.mdate
 ```
 
 13
@@ -153,17 +155,17 @@ GROUP BY
 
 ```sql
 SELECT
-	game.mdate,
-	game.team1,
-	SUM( CASE WHEN goal.teamid = game.team1 THEN 1 ELSE 0 END ) AS score1,
-	game.team2,
-	SUM( CASE WHEN goal.teamid = game.team2 THEN 1 ELSE 0 END ) AS score2
+  game.mdate,
+  game.team1,
+  SUM( CASE WHEN goal.teamid = game.team1 THEN 1 ELSE 0 END ) AS score1,
+  game.team2,
+  SUM( CASE WHEN goal.teamid = game.team2 THEN 1 ELSE 0 END ) AS score2
 FROM
-	game
+  game
 LEFT JOIN goal ON
-	game.id = goal.matchid
+  game.id = goal.matchid
 GROUP BY
-	game.mdate,
-	game.team2,
-	game.team1
+  game.mdate,
+  game.team2,
+  game.team1
 ```
